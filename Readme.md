@@ -1,6 +1,6 @@
 # Личный проект «Седона»
 
-* Студент: [Петр](https://up.htmlacademy.ru/htmlcss/29/user/983595).
+* Студент: [Петр Масляный](https://up.htmlacademy.ru/htmlcss/29/user/983595).
 * Наставник: [Евгений Петров](https://htmlacademy.ru/profile/id617077).
 
 ---
