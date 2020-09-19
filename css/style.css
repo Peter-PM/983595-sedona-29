@@ -128,9 +128,9 @@ img {
 .back-image-wrap {
   background-color: var(--basic-light-brown);
   background:
-    url("/img/welcome.png") no-repeat center center,
-    url("/img/Shape.png") no-repeat center bottom, 
-    url("/img/background-photo.png") no-repeat;
+    url("../img/welcome.png") no-repeat center center,
+    url("../img/Shape.png") no-repeat center bottom, 
+    url("../img/background-photo.png") no-repeat;
   height: 509px;
   width: 1200px;
   margin: 0 auto;
@@ -284,7 +284,7 @@ input[type="number"] {
   margin-left: 24px;
   margin-right: 10px;
   background-color: var(--input-color);
-  border: var(--input-color);
+  border: none;
 }
 
 input[type="submit"] {
@@ -297,12 +297,12 @@ input[type="submit"] {
   text-transform: uppercase;
   color: var(--basic-light);
   background-color: var(--basic-blue);
-  border: var(--basic-blue);
+  border: none;
 }
 
 .map {
   height: 594px;
-  background-image: url("/img/map.png");
+  background-image: url("../img/map.png");
   margin-bottom: -220px;
 }
 
@@ -341,19 +341,19 @@ input[type="submit"]:active,
 }
 
 .twitter {
-  background-image: url("/img/twitter.svg");
+  background-image: url("../img/twitter.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .facebook {
-  background-image: url("/img/fb-icon.png");
+  background-image: url("../img/fb-icon.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .youtube {
-  background-image: url("/img/youtube.png");
+  background-image: url("../img/youtube.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -362,8 +362,4 @@ input[type="submit"]:active,
   font-size: 14px;
   line-height: 26px;
   color: var(--basic-black);
-}
-
-.html-academy-logo  {
-  color: #5496BD;
 }
