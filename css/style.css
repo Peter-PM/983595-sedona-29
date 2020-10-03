@@ -53,7 +53,7 @@
 body {
   min-width: 1200px;
   padding: 0;
-  margin: 0px;
+  margin: 0 40px;
   font-family: "PT sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
@@ -69,9 +69,11 @@ body {
 }
 
 .page {
-  width: 1200px;
+  width: 1280px;
   margin: 0 auto;
 }
+
+
 
 img {
   max-width: 100%;
@@ -98,7 +100,7 @@ img {
 }
 
 .site-nav {
-  height: 56px;
+  min-height: 56px;
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
@@ -222,17 +224,17 @@ img {
 }
 
 .house-icon {
-  background: url("/img/icon/icon-1.svg") no-repeat 50% 100%;
+  background: url("../img/icon/icon-1.svg") no-repeat 50% 100%;
   margin-bottom: 28px;
 }
 
 .burger-icon {
-  background: url("/img/icon/icon-2.svg") no-repeat 50% 100%;
+  background: url("../img/icon/icon-2.svg") no-repeat 50% 100%;
   margin-bottom: 28px;
 }
 
 .souvenir-icon {
-  background: url("/img/icon/icon-3.svg") no-repeat 50% 100%;
+  background: url("../img/icon/icon-3.svg") no-repeat 50% 100%;
   margin-bottom: 28px;
 }
 
@@ -247,17 +249,19 @@ img {
   font-size: 30px;
   line-height: 24px;
   padding-top: 58px;
-  margin-top: 0;
+  margin: 0;
 }
 
 
 .invitation-text {
   font-size: 14px;
   line-height: 24px;
-  margin-bottom: 50px;
+  margin: 0;
+  margin-bottom: 45px;
+  margin-top: 38px;
 }
 
-.saerch-form-buttom {
+.saerch-form-button {
   width: 568px;
   height: 86px;
   color: var(--basic-light);
@@ -269,70 +273,79 @@ img {
   border: var(--basic-brown);
 }
 
-.saerch-form-buttom:hover {
+.saerch-form-button:hover {
   background-color: var(--brown-hover-color);
 }
 
-.saerch-form-buttom:active {
+.saerch-form-button:active {
   background-color: var(--brown-active-color);
   color: var(--text-opacity-color);
 }
 
-.saerch-form-buttom:focus {
+.saerch-form-button:focus {
   outline: none;
 }
 
+.search-form-container {
+  position: relative;
+  margin: 0 auto;
+  width: 568px;
+}
+
 .search-form {
+  position: absolute;
+
   width: 568px;
   height: 395px;
-  padding-top: 26px;
+  padding: 0;
   margin: 0 auto;
   font-weight: 700;
   font-size: 14px;
   line-height: 26px;
   box-shadow: 0px 7px 15px var(--form-shedow-color);
+  background-color: var(--basic-light);
 }
 
-input[type="date"] {
-  width: 346px;
-  height: 38px;
-  margin-top: 29px;
-  margin-left: 24px;
+.travel-date {
+  width: 342px;
+  height: 34px;
+  padding: 0;
   background-color: var(--input-color);
-  border: var(--input-color);
+  border: 2px solid var(--input-color);
+  font-weight: 700;
 }
 
-input[type="date"]:hover {
+.travel-date:hover {
   background-color: var(--input-hover-color);
 }
 
-input[type="date"]:focus {
+.travel-date:focus {
   outline: none;
   background-color: var(--basic-light);
   border: 2px solid var(--input-border-color);
 }
 
-input[type="number"] {
-  width: 114px;
-  height: 38px;
-  margin-top: 30px;
-  margin-left: 24px;
-  margin-right: 10px;
+.number-people {
+  width: 110px;
+  height: 34px;
+  padding: 0;
+  text-align: center;
+  font-weight: 700;
   background-color: var(--input-color);
-  border: none;
+  border: 2px solid var(--input-color);
 }
 
-input[type="number"]:hover {
+.number-people:hover {
   background-color: var(--input-hover-color);
 }
 
-input[type="number"]:focus {
+.number-people:focus {
   outline: none;
   background-color: var(--basic-light);
   border: 2px solid var(--input-border-color);
 }
 
-input[type="submit"] {
+.search-button {
   width: 458px;
   height: 58px;
   margin-top: 54px;
@@ -345,37 +358,50 @@ input[type="submit"] {
   border: none;
 }
 
-input[type="submit"]:hover,
+.search-button:hover,
 .social-link:hover {
   background-color: var(--dark-blue);
 }
 
-input[type="submit"]:active,
+.search-button:active,
 .social-link:active {
   background-color: var(--extra-dark-blue);
   color: rgba(255, 255, 255, 0.3);
 }
 
-input[type="submit"]:focus {
+.search-button:focus {
   outline: none;
 }
 
 .map {
   height: 594px;
+  
   background-image: url("../img/map.png");
+  
   margin-bottom: -120px;
 }
 
 .main-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 120px;
   background-color: var(--footer-opacity-color);
 }
 
 .footer-contacts {
-  padding-top: 23px;
+  display: flex;
+  flex-direction: column;
+  min-width: 225px;
+  margin-left: 125px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+}
+
+.footer-social {
+  margin-right: 24px;
+  text-align: center;
 }
 
 .social-item {
@@ -389,12 +415,12 @@ input[type="submit"]:focus {
   background-color: var(--basic-blue);
 }
 
-input[type="submit"]:hover,
+.search-button:hover,
 .social-link:hover {
   background-color: var(--dark-blue);
 }
 
-input[type="submit"]:active,
+.search-button:active,
 .social-link:active {
   background-color: var(--extra-dark-blue);
   color: rgba(255, 255, 255, 0.3);
@@ -419,6 +445,9 @@ input[type="submit"]:active,
 }
 
 .footer-copyright {
+  display: flex;
+  align-items: center;
+  margin-right: 138px;
   font-size: 14px;
   line-height: 26px;
   color: var(--basic-black);
@@ -472,8 +501,24 @@ input[type="submit"]:active,
 
 .site-nav-list {
   display: grid;
-  grid-template-columns: 72px 94px 134px 98px 418px 85px 147px 80px 72px;
+  grid-template-columns: 300px 300px 300px 300px;
+  text-align: left;
 }
+
+.site-nav-item:nth-child(4n+1) {
+  padding-left: 72px;
+}
+
+.site-nav-item:nth-child(4n) {
+  text-align: right;
+  padding-right: 72px;
+}
+
+.site-nav-item:nth-child(4n-1) {
+  text-align: right;
+}
+
+/*
 .site-nav-item:nth-of-type(1) {
   grid-column: 2 / 3;
 }
@@ -486,7 +531,7 @@ input[type="submit"]:active,
 .site-nav-item:nth-of-type(4) {
   grid-column: -2 / -3;
 }
-
+*/
 .sedona-life-item {
   display: grid;
   grid-template-rows: 160px 21px 149px;
@@ -498,8 +543,6 @@ input[type="submit"]:active,
   padding-top: 25px;
 }
 
-.page-footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding-top: 20px; /*доделать*/
-}
+
+
+/* Выпадающее меню */
