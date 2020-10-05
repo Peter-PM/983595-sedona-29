@@ -488,7 +488,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 120px;
+  min-height: 120px;
   background-color: var(--footer-opacity-color);
 }
 
@@ -508,6 +508,7 @@ img {
 
 .social-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 150px;
   margin-right: 18px;
@@ -519,6 +520,7 @@ img {
   align-items: center;
   width: 46px;
   height: 48px;
+  margin-bottom: 5px;
   background-color: var(--basic-blue);
 }
 
