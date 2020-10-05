@@ -41,9 +41,11 @@
   --input-hover-color: #ebebeb;
   --input-border-color: #e5e5e5;
   --rating-color: #666666;
+  --academy-gray-active: #bdbbbc;
 
   --text-opacity-color: rgba(255, 255, 255, 0.3);
   --footer-opacity-color: rgba(255, 255, 255, 0.9);
+
   --shadow-color: rgba(0, 1, 1, 0.2);
   --form-shedow-color: rgba(0, 1, 1, 0.15);
 }
@@ -295,8 +297,8 @@ img {
 .search-form {
   position: absolute;
 
-  width: 568px;
-  height: 395px;
+  width: 458px;
+  height: 285px;
   padding: 0;
   margin: 0 auto;
   font-weight: 700;
@@ -306,13 +308,112 @@ img {
   background-color: var(--basic-light);
 }
 
+.search-form-grid {
+  display: grid;
+  width: 458px;
+  height: 285px;
+  grid-template-columns: 112px 114px 118px 114px;
+  grid-template-rows: 38px 30px 38px 30px 38px 53px 58px;
+  padding: 55px;
+}
+.arrival-date-label{
+  text-align: left;
+  margin: auto 0;
+}
+.arrival-date {
+  grid-column: 2 / -1;
+  grid-row: 1 / 2;
+}
+.departure-date-label {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  text-align: left;
+  margin: auto 0;
+}
+.departure-date {
+  grid-column: 2 / -1;
+  grid-row: 3 / 4;
+}
+.adults-label {
+  text-align: left;
+  margin: auto 0;
+}
+.adults-label,
+.kids-label,
+.number-people {
+  grid-row: 5 /6;
+  margin: auto 0;
+}
+
 .travel-date {
-  width: 342px;
+  width: 330px;
   height: 34px;
   padding: 0;
+  padding-left: 12px;
   background-color: var(--input-color);
   border: 2px solid var(--input-color);
   font-weight: 700;
+}
+
+.departure-date-label::before,
+.arrival-date-label::before {
+  content: "";
+  position: absolute;
+  right: 63px;
+  width: 21px;
+  height: 23px;
+  background-image: url("../img/icon/calendar.svg");
+  background-repeat: no-repeat;
+}
+.kids-label {
+  position: relative;
+}
+.kids-label::before {
+  content: "";
+  position: absolute;
+  right: -100px;
+  top: 7px;
+  width: 11px;
+  height: 11px;
+  background-image: url("../img/icon/Union.svg");
+  background-repeat: no-repeat;
+}
+.kids-label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -25px;
+  top: 11px;
+  width: 11px;
+  height: 11px;
+  background-image: url("../img/icon/Rectangle.svg");
+  background-repeat: no-repeat;
+}
+
+.adults-label {
+  position: relative;
+}
+.adults-label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -100px;
+  top: 7px;
+  width: 11px;
+  height: 11px;
+  background-image: url("../img/icon/Union.svg");
+  background-repeat: no-repeat;
+}
+.adults-label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -25px;
+  top: 11px;
+  width: 11px;
+  height: 11px;
+  background-image: url("../img/icon/Rectangle.svg");
+  background-repeat: no-repeat;
 }
 
 .travel-date:hover {
@@ -346,9 +447,11 @@ img {
 }
 
 .search-button {
+  grid-column: 1/-1;
+  grid-row: -1/-2;
+
   width: 458px;
   height: 58px;
-  margin-top: 54px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -392,6 +495,8 @@ img {
 .footer-contacts {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: 60px;
   min-width: 225px;
   margin-left: 125px;
   font-size: 21px;
@@ -399,21 +504,25 @@ img {
   font-weight: 700;
 }
 
-.footer-social {
-  margin-right: 24px;
-  text-align: center;
-}
 
-.social-item {
-  display: inline;
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  margin-right: 18px;
 }
 
 .social-link {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 46px;
   height: 48px;
   background-color: var(--basic-blue);
 }
+
+
 
 .search-button:hover,
 .social-link:hover {
@@ -423,9 +532,12 @@ img {
 .search-button:active,
 .social-link:active {
   background-color: var(--extra-dark-blue);
-  color: rgba(255, 255, 255, 0.3);
 }
 
+.social-link:active path {
+  opacity: 0.3;
+}
+/*
 .twitter {
   background-image: url("../img/twitter.svg");
   background-repeat: no-repeat;
@@ -443,14 +555,24 @@ img {
   background-repeat: no-repeat;
   background-position: center;
 }
-
+*/
 .footer-copyright {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  width: 195px;
   margin-right: 138px;
   font-size: 14px;
   line-height: 26px;
   color: var(--basic-black);
+}
+
+.footer-copyright:hover path {
+  fill: var(--basic-blue);
+}
+
+.footer-copyright:active path {
+  fill: var(--academy-gray-active);
 }
 
 .advantages-list {
