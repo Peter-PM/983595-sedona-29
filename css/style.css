@@ -355,6 +355,18 @@ img {
   font-weight: 700;
 }
 
+.calendar {
+  position: absolute;
+  right: 63px;
+  cursor: pointer;
+}
+.calendar:hover path {
+  fill: var(--basic-black);
+}
+.calendar:active path {
+  fill: var(--basic-blue);
+}
+/*
 .departure-date-label::before,
 .arrival-date-label::before {
   content: "";
@@ -364,66 +376,23 @@ img {
   height: 23px;
   background-image: url("../img/icon/calendar.svg");
   background-repeat: no-repeat;
-}
-.kids-label {
-  position: relative;
-}
-.kids-label::before {
-  content: "";
-  position: absolute;
-  right: -100px;
-  top: 7px;
-  width: 11px;
-  height: 11px;
-  background-image: url("../img/icon/Union.svg");
-  background-repeat: no-repeat;
-}
-.kids-label::after {
-  content: "";
-  display: block;
-  position: absolute;
-  right: -25px;
-  top: 11px;
-  width: 11px;
-  height: 11px;
-  background-image: url("../img/icon/Rectangle.svg");
-  background-repeat: no-repeat;
-}
+}*/
 
-.adults-label {
-  position: relative;
-}
-.adults-label::before {
-  content: "";
-  display: block;
-  position: absolute;
-  right: -100px;
-  top: 7px;
-  width: 11px;
-  height: 11px;
-  background-image: url("../img/icon/Union.svg");
-  background-repeat: no-repeat;
-}
-.adults-label::after {
-  content: "";
-  display: block;
-  position: absolute;
-  right: -25px;
-  top: 11px;
-  width: 11px;
-  height: 11px;
-  background-image: url("../img/icon/Rectangle.svg");
-  background-repeat: no-repeat;
-}
-
+.number-people:hover,
 .travel-date:hover {
   background-color: var(--input-hover-color);
+  border: 2px solid var(--input-hover-color)
 }
-
+.number-people:focus,
 .travel-date:focus {
   outline: none;
   background-color: var(--basic-light);
   border: 2px solid var(--input-border-color);
+}
+
+.number-people::-webkit-outer-spin-button,
+.number-people::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 
 .number-people {
@@ -434,16 +403,95 @@ img {
   font-weight: 700;
   background-color: var(--input-color);
   border: 2px solid var(--input-color);
+  -moz-appearance: textfield;
+  margin: 0;
 }
 
-.number-people:hover {
+.adults-label {
+  position: relative;
+}
+
+.adults-minus-button {
+  position: absolute;
+  right: 369px;
+  top: 197px;
+  height: 11px;
+  background-position: center center;
+  border: none;
+  cursor: pointer;
+}
+.adults-plus-button {
+  position: absolute;
+  right: 295px;
+  top: 201px;
+  height: 11px;
+  background-color: var(--input-color);
+  
+  border: none;
+  cursor: pointer;
+}
+.adults:hover ~ .adults-minus-button,
+.adults:hover ~ .adults-plus-button {
   background-color: var(--input-hover-color);
 }
-
-.number-people:focus {
-  outline: none;
+.adults:focus ~ .adults-minus-button,
+.adults:focus ~ .adults-plus-button {
   background-color: var(--basic-light);
-  border: 2px solid var(--input-border-color);
+}
+
+.kids-label {
+  position: relative;
+}
+
+.kids-minus-button {
+  position: absolute;
+  right: 137px;
+  top: 197px;
+  height: 11px;
+  background-color: var(--input-color);
+  background-position: center center;
+  border: none;
+  cursor: pointer;
+}
+.kids-plus-button {
+  position: absolute;
+  right: 63px;
+  top: 201px;
+  height: 11px;
+  background-color: var(--input-color);
+  
+  border: none;
+  cursor: pointer;
+}
+
+.kids:hover ~ .kids-minus-button,
+.kids:hover ~ .kids-plus-button {
+  background-color: var(--input-hover-color);
+}
+.kids:focus ~ .kids-minus-button,
+.kids:focus ~ .kids-plus-button {
+  background-color: var(--basic-light);
+}
+
+.button-outline:focus,
+.button-outline:active {
+  outline: none;
+}
+.adults-plus-button:hover path,
+.kids-plus-button:hover path {
+  fill: var(--basic-black);
+}
+.adults-plus-button:active path,
+.kids-plus-button:active path {
+  fill: var(--basic-blue);
+}
+.adults-minus-button:hover rect,
+.kids-minus-button:hover rect {
+  fill: var(--basic-black);
+}
+.adults-minus-button:focus rect,
+.kids-minus-button:focus rect {
+  fill: var(--basic-blue);
 }
 
 .search-button {
