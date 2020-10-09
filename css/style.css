@@ -75,8 +75,6 @@ body {
   margin: 0 auto;
 }
 
-
-
 img {
   max-width: 100%;
   height: auto;
@@ -365,17 +363,6 @@ img {
 .calendar:active path {
   fill: var(--basic-blue);
 }
-/*
-.departure-date-label::before,
-.arrival-date-label::before {
-  content: "";
-  position: absolute;
-  right: 63px;
-  width: 21px;
-  height: 23px;
-  background-image: url("../img/icon/calendar.svg");
-  background-repeat: no-repeat;
-}*/
 
 .number-people:hover,
 .travel-date:hover {
@@ -555,8 +542,6 @@ img {
   font-weight: 700;
 }
 
-
-
 .social-list {
   display: flex;
   flex-wrap: wrap;
@@ -575,8 +560,6 @@ img {
   background-color: var(--basic-blue);
 }
 
-
-
 .search-button:hover,
 .social-link:hover {
   background-color: var(--dark-blue);
@@ -590,25 +573,7 @@ img {
 .social-link:active path {
   opacity: 0.3;
 }
-/*
-.twitter {
-  background-image: url("../img/twitter.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
 
-.facebook {
-  background-image: url("../img/fb-icon.png");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.youtube {
-  background-image: url("../img/youtube.png");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-*/
 .footer-copyright {
   display: flex;
   justify-content: space-between;
@@ -693,20 +658,6 @@ img {
   text-align: right;
 }
 
-/*
-.site-nav-item:nth-of-type(1) {
-  grid-column: 2 / 3;
-}
-.site-nav-item:nth-of-type(2) {
-  grid-column: 4 / 5;
-}
-.site-nav-item:nth-of-type(3) {
-  grid-column: 6 / 7;
-}
-.site-nav-item:nth-of-type(4) {
-  grid-column: -2 / -3;
-}
-*/
 .sedona-life-item {
   display: grid;
   grid-template-rows: 160px 21px 149px;
@@ -717,7 +668,3 @@ img {
 .sedona-life-text {
   padding-top: 25px;
 }
-
-
-
-/* Выпадающее меню */
