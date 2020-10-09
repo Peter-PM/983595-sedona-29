@@ -143,7 +143,7 @@ img {
 .back-image-wrap {
   background-color: var(--basic-light-brown);
   background:
-    url("../img/background/welcome.svg") no-repeat center center,
+    url("../img/background/welcome.svg") no-repeat 50% 49%,
     url("../img/background/Shape.svg") no-repeat center bottom, 
     url("../img/background-photo.png") no-repeat;
   height: 509px;
@@ -260,7 +260,7 @@ img {
   line-height: 24px;
   margin: 0;
   margin-bottom: 45px;
-  margin-top: 38px;
+  margin-top: 31px;
 }
 
 .saerch-form-button {
@@ -296,7 +296,6 @@ img {
 
 .search-form {
   position: absolute;
-
   width: 458px;
   height: 285px;
   padding: 0;
@@ -413,8 +412,8 @@ img {
 
 .adults-minus-button {
   position: absolute;
-  right: 369px;
-  top: 197px;
+  right: 370px;
+  top: 202px;
   height: 11px;
   background-position: center center;
   border: none;
@@ -426,10 +425,10 @@ img {
   top: 201px;
   height: 11px;
   background-color: var(--input-color);
-  
   border: none;
   cursor: pointer;
 }
+
 .adults:hover ~ .adults-minus-button,
 .adults:hover ~ .adults-plus-button {
   background-color: var(--input-hover-color);
@@ -441,12 +440,13 @@ img {
 
 .kids-label {
   position: relative;
+  padding-left: 25px;
 }
 
 .kids-minus-button {
   position: absolute;
   right: 137px;
-  top: 197px;
+  top: 202px;
   height: 11px;
   background-color: var(--input-color);
   background-position: center center;
@@ -455,11 +455,10 @@ img {
 }
 .kids-plus-button {
   position: absolute;
-  right: 63px;
+  right: 62px;
   top: 201px;
   height: 11px;
   background-color: var(--input-color);
-  
   border: none;
   cursor: pointer;
 }
@@ -477,21 +476,24 @@ img {
 .button-outline:active {
   outline: none;
 }
-.adults-plus-button:hover path,
-.kids-plus-button:hover path {
-  fill: var(--basic-black);
+
+.kids-minus-button line,
+.kids-plus-button line,
+.adults-minus-button line,
+.adults-plus-button line {
+  stroke: #a9a9a9;
 }
-.adults-plus-button:active path,
-.kids-plus-button:active path {
-  fill: var(--basic-blue);
+.kids-minus-button:hover line,
+.kids-plus-button:hover line,
+.adults-minus-button:hover line,
+.adults-plus-button:hover line {
+  stroke: var(--basic-black);
 }
-.adults-minus-button:hover rect,
-.kids-minus-button:hover rect {
-  fill: var(--basic-black);
-}
-.adults-minus-button:focus rect,
-.kids-minus-button:focus rect {
-  fill: var(--basic-blue);
+.kids-minus-button:active line,
+.kids-plus-button:active line,
+.adults-minus-button:active line,
+.adults-plus-button:active line {
+  stroke: var(--basic-blue);
 }
 
 .search-button {
@@ -547,6 +549,7 @@ img {
   height: 60px;
   min-width: 225px;
   margin-left: 125px;
+  margin-bottom: 15px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
