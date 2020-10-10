@@ -42,6 +42,7 @@
   --input-border-color: #e5e5e5;
   --rating-color: #666666;
   --academy-gray-active: #bdbbbc;
+  --plus-minus-color: #a9a9a9;
 
   --text-opacity-color: rgba(255, 255, 255, 0.3);
   --footer-opacity-color: rgba(255, 255, 255, 0.9);
@@ -69,7 +70,9 @@ body {
 .page a {
   text-decoration: none;
 }
-
+.page a:focus {
+  outline-color: var(--academy-gray-active);
+}
 .page {
   width: 1280px;
   margin: 0 auto;
@@ -106,6 +109,10 @@ img {
   font-weight: bold;
   color: var(--basic-black);
   background-color: transparent;
+}
+
+.site-nav-link {
+  padding: 10px;
 }
 
 .list-style-none {
@@ -283,7 +290,7 @@ img {
 }
 
 .saerch-form-button:focus {
-  outline: none;
+  outline: 1px solid var(--brown-active-color);
 }
 
 .search-form-container {
@@ -401,7 +408,7 @@ img {
   position: absolute;
   right: 370px;
   top: 202px;
-  height: 11px;
+  height: 12px;
   background-position: center center;
   border: none;
   cursor: pointer;
@@ -410,7 +417,7 @@ img {
   position: absolute;
   right: 295px;
   top: 201px;
-  height: 11px;
+  height: 12px;
   background-color: var(--input-color);
   border: none;
   cursor: pointer;
@@ -434,7 +441,7 @@ img {
   position: absolute;
   right: 137px;
   top: 202px;
-  height: 11px;
+  height: 12px;
   background-color: var(--input-color);
   background-position: center center;
   border: none;
@@ -444,7 +451,7 @@ img {
   position: absolute;
   right: 62px;
   top: 201px;
-  height: 11px;
+  height: 12px;
   background-color: var(--input-color);
   border: none;
   cursor: pointer;
@@ -464,11 +471,15 @@ img {
   outline: none;
 }
 
+.button-outline:focus line {
+  stroke: #000000;
+}
+
 .kids-minus-button line,
 .kids-plus-button line,
 .adults-minus-button line,
 .adults-plus-button line {
-  stroke: #a9a9a9;
+  stroke: var(--plus-minus-color);
 }
 .kids-minus-button:hover line,
 .kids-plus-button:hover line,
@@ -510,7 +521,7 @@ img {
 }
 
 .search-button:focus {
-  outline: none;
+  outline: 1px solid var(--extra-dark-blue);
 }
 
 .map {

@@ -88,9 +88,6 @@
       <section class="search-form-container">
         <button class="saerch-form-button">Поиск гостиницы в Седоне</button>
         <form  class="search-form search-form-grid" action="https://echo.htmlacademy.ru/" method="get">
-          
-          
-
           <label class="arrival-date-label" for="arrival-date">
             Дата заезда:
             <span class="calendar">
@@ -113,10 +110,6 @@
           <input class="travel-date departure-date" id="departure-date" type="text" name="departure-date" placeholder="4 ИЮЛЯ 2017">
           <label class="adults-label" for="adults">Взрослые:</label>
           <input class="number-people adults" id="adults" type="number" name="adults" placeholder="2">
-          <label class="kids-label" for="kids">Дети:</label>
-          <input class="number-people kids" id="kids" type="number" name="kids" placeholder="0">
-          <input class="search-button" type="submit" value="Найти">
-          
           <button class="adults-minus-button button-outline" type="button">
             <svg width="12" height="12">
               <line x1="0" y1="6" x2="12" y2="6" stroke="none" stroke-width="2.5"/>
@@ -128,6 +121,8 @@
               <line x1="6" y1="0" x2="6" y2="12" stroke="none" stroke-width="2.5"/>
             </svg>
           </button>
+          <label class="kids-label" for="kids">Дети:</label>
+          <input class="number-people kids" id="kids" type="number" name="kids" placeholder="0">
           <button class="kids-minus-button button-outline" type="button">
             <svg width="12" height="12">
               <line x1="0" y1="6" x2="12" y2="6" stroke="none" stroke-width="2.5"/>
@@ -139,6 +134,7 @@
               <line x1="6" y1="0" x2="6" y2="12" stroke="none" stroke-width="2.5"/>
             </svg>
           </button>
+          <input class="search-button" type="submit" value="Найти">                   
         </form>
       </section>
       <section class="map">
