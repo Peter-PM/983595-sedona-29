@@ -71,7 +71,7 @@ body {
   text-decoration: none;
 }
 .page a:focus {
-  outline-color: var(--academy-gray-active);
+  outline-color: var(--extra-dark-blue);
 }
 .page {
   width: 1280px;
