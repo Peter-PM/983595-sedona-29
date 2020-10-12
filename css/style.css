@@ -127,20 +127,14 @@ img {
   padding-top: 15px;
 }
 
-.site-nav-link,
-.contacts-instagram-link,
-.contacts-phone {
+.link-style {
   color: var(--basic-black);
 }
 
-.site-nav-link:hover,
-.contacts-instagram-link:hover,
-.contacts-phone:hover {
+.link-style:hover {
   color: var(--basic-blue);
 }
-.site-nav-link:active,
-.contacts-instagram-link:active,
-.contacts-phone:active  {
+.link-style:active  {
   color: var(--basic-black);
   opacity: 0.3;
 }
@@ -472,25 +466,15 @@ img {
 }
 
 .button-outline:focus line {
-  stroke: #000000;
-}
-
-.kids-minus-button line,
-.kids-plus-button line,
-.adults-minus-button line,
-.adults-plus-button line {
-  stroke: var(--plus-minus-color);
-}
-.kids-minus-button:hover line,
-.kids-plus-button:hover line,
-.adults-minus-button:hover line,
-.adults-plus-button:hover line {
   stroke: var(--basic-black);
 }
-.kids-minus-button:active line,
-.kids-plus-button:active line,
-.adults-minus-button:active line,
-.adults-plus-button:active line {
+.button-outline line {
+  stroke: var(--plus-minus-color);
+}
+.button-outline:hover line {
+  stroke: var(--basic-black);
+}
+.button-outline:active line {
   stroke: var(--basic-blue);
 }
 
