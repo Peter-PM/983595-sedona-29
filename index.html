@@ -23,7 +23,7 @@
 
     <main class="center page-main">
       <section class="back-image-wrap">
-        <h1 class="invisible">Гостиницы в Седоне</h1>
+        <h1 class="visually-hidden">Гостиницы в Седоне</h1>
       </section>
       <section class="advantages">
         <p class="advantages-slogan">Седона &ndash; небольшой городок в Аризоне, заслуживающий большего!</p>
@@ -97,7 +97,7 @@
               </svg>
             </span>
           </label>
-          <input class="travel-date arrival-date" id="arrival-date" type="text" name="arrival-date" placeholder="24 АПРЕЛЯ 2017">
+          <input class="travel-date arrival-date" id="arrival-date" type="text" name="arrival-date" placeholder="24 АПРЕЛЯ 2017" required>
           <label class="departure-date-label" for="departure-date">
             Дата выезда:
             <span class="calendar">
@@ -107,9 +107,9 @@
               </svg>
             </span>
           </label>
-          <input class="travel-date departure-date" id="departure-date" type="text" name="departure-date" placeholder="4 ИЮЛЯ 2017">
+          <input class="travel-date departure-date" id="departure-date" type="text" name="departure-date" placeholder="4 ИЮЛЯ 2017" required>
           <label class="adults-label" for="adults">Взрослые:</label>
-          <input class="number-people adults" id="adults" type="number" name="adults" placeholder="2">
+          <input class="number-people adults" id="adults" type="number" name="adults" placeholder="2" required>
           <button class="adults-minus-button button-outline" type="button">
             <svg width="12" height="12">
               <line x1="0" y1="6" x2="12" y2="6" stroke="none" stroke-width="2.5"/>
@@ -122,7 +122,7 @@
             </svg>
           </button>
           <label class="kids-label" for="kids">Дети:</label>
-          <input class="number-people kids" id="kids" type="number" name="kids" placeholder="0">
+          <input class="number-people kids" id="kids" type="number" name="kids" placeholder="0" required>
           <button class="kids-minus-button button-outline" type="button">
             <svg width="12" height="12">
               <line x1="0" y1="6" x2="12" y2="6" stroke="none" stroke-width="2.5"/>
@@ -134,7 +134,8 @@
               <line x1="6" y1="0" x2="6" y2="12" stroke="none" stroke-width="2.5"/>
             </svg>
           </button>
-          <input class="search-button" type="submit" value="Найти">                   
+          <button class="search-button">Найти</button>
+                           
         </form>
       </section>
       <section class="map">
