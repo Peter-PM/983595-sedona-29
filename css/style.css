@@ -746,7 +746,7 @@ img {
   background-repeat: no-repeat;
 }
 .filter-input-checkbox:focus + label {
-  outline: 2px solid var(--basic-light);
+  outline: 1px solid var(--basic-light);
 }
 .checkbox-filters {
   width: 140px;
@@ -757,6 +757,9 @@ img {
   border: none;
 }
 .price-controls {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
   width: 312px;
   height: 32px;
   border: 2px solid white;
@@ -764,7 +767,7 @@ img {
   margin-top: 12px;
 }
 .price-inputs {
-  width: 49%;
+  width: 50%;
   height: 32px;
   padding: 0;
   margin: 0;
@@ -772,6 +775,21 @@ img {
   background: none;
   text-align: center;
   color: inherit;
+}
+.price-inputs:active {
+  outline: none;
+}
+.price-inputs:focus {
+  outline-color: var(--extra-dark-blue);
+}
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 155px;
+  width: 2px;
+  height: 22px;
+  background-color: var(--basic-light);
 }
 .range-controls {
   position: relative;
@@ -799,6 +817,12 @@ img {
   box-shadow:  0 2px 0 0 var(--text-opacity-color);
   cursor: pointer;
 }
+.toggle:hover {
+  transform: scale(1.2);
+}
+.toggle:focus {
+  outline-color: var(--extra-dark-blue);
+}
 .toggle-min {
   left: 3%;
   margin-left: -9px;
@@ -820,7 +844,13 @@ img {
   margin-left: 84px;
   margin-top: 33px;
 }
-
+.filter-buttom:hover {
+  background-color: var(--basic-light);
+  color: var(--basic-black);
+}
+.filter-buttom:focus {
+  outline-color: var(--extra-dark-blue);
+}
 
 /* Sorting box */
 .sorting-title {
@@ -899,4 +929,6 @@ img {
 .hotels-link {
   display: block;
   height: 90px;
+  margin: 0;
+  padding: 0;
 }
