@@ -165,7 +165,7 @@ img {
   background:
     url("../img/background/welcome.svg") no-repeat 50% 49%,
     url("../img/background/Shape.svg") no-repeat center bottom, 
-    url("../img/background-photo.png") no-repeat;
+    url("../img/background/background-photo-optim.jpg") no-repeat;
   height: 509px;
   width: 1200px;
   margin: 0 auto;
@@ -334,8 +334,11 @@ img {
 
 }
 
+/*
 .search-form-button:active + .search-form {
 }
+*/
+
 .search-form-grid {
   display: grid;
   width: 458px;
@@ -541,7 +544,7 @@ img {
 .map {
   height: 594px;
   
-  background-image: url("../img/map.png");
+  background-image: url("../img/content/map.png");
   
   margin-bottom: -120px;
 }
@@ -581,7 +584,7 @@ img {
   align-items: center;
   width: 46px;
   height: 48px;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
   background-color: var(--basic-blue);
 }
 
@@ -716,11 +719,10 @@ img {
   grid-template-columns: 253px 1fr 316px;
   padding: 25px 73px 32px;
 }
-.filter-option {
-  padding-top: 25px;
-  padding-left: 42px;
-}
-.filter-option label {
+
+.filter-label {
+  margin-top: 25px;
+  margin-left: 40px;
   position: relative;
   display: block;
   cursor: pointer;
@@ -730,29 +732,17 @@ img {
 .filter-input-checkbox + label::after {
   content: "";
   position: absolute;
-  left: -42px;
-  width: 23px;
+  left: -40px;
+  width: 27px;
   height: 23px;
   background-image: url('../img/icon/filter-normal.svg');
   background-repeat: no-repeat;
 }
 .filter-input-checkbox:checked + label::after {
-  content: "";
-  position: absolute;
-  left: -42px;
-  width: 27px;
-  height: 23px;
-  background-image: url('../img/icon/checkbox-on.svg');
-  background-repeat: no-repeat;
+  background-image: url('../img/icon/checkbox-on.svg'); 
 }
 .filter-input-checkbox:disabled + label::after {
-  content: "";
-  position: absolute;
-  left: -42px;
-  width: 27px;
-  height: 23px;
   background-image: url('../img/icon/filter-disabled.svg');
-  background-repeat: no-repeat;
 }
 .filter-input-checkbox:focus + label {
   outline: 1px solid var(--basic-light);
@@ -940,4 +930,11 @@ img {
   height: 90px;
   margin: 0;
   padding: 0;
+}
+.hotel-list-title {
+  margin: 0;
+  margin-top: -5px;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
 }
