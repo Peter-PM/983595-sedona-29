@@ -315,17 +315,30 @@ img {
 .search-form-button:focus {
   outline: 1px solid var(--brown-active-color);
 }
-
 .search-form-container {
   position: relative;
   margin: 0 auto;
   width: 568px;
 }
+.search-form-up {
+  position: relative;
+  top: -395px;
+  margin: 0 auto;
+  width: 568px;
+  transform: translateY(-395px);
+  transition: 1s;
+}
+.search-form-down {
+  position: relative;
+  top: -395px;
+  margin: 0 auto;
+  width: 568px;
+  transform: translateY(395px);
+  transition: 1s;
+}
 
 .search-form {
   position: absolute;
-  top: -310px;
-  left: 0;
   width: 458px;
   height: 285px;
   padding: 0;
@@ -336,13 +349,10 @@ img {
   box-shadow: 0px 7px 15px var(--form-shedow-color);
   background-color: var(--basic-light);
 }
-.search-form-slyde {
 
-}
 
 .search-form-button:hover + .search-form {
-  transform: translateY(396px);
-  transition: 1s;
+  
 }
 
 
