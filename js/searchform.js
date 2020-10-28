@@ -37,8 +37,8 @@ searchForm.addEventListener("submit", function (evt) {
             searchFormContainer.classList.remove("search-form-down");   
         } 
     } else {
-            localStorage.setItem("adults", adults.value);
-            localStorage.setItem("kids", kids.value);
+        localStorage.setItem("adults", adults.value);
+        localStorage.setItem("kids", kids.value);
     }
 });
 
