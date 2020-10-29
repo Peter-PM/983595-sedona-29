@@ -9,7 +9,6 @@ const kids = document.querySelector(".kids");
 
 openButtonForm.addEventListener("click", function (evt) {
   evt.preventDefault();
-  arrivalDate.focus();
   adults.value = localStorage.getItem("adults");
   kids.value = localStorage.getItem("kids", kids.value);
   if (searchFormContainer.classList.contains("search-form-up")) {

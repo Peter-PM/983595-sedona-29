@@ -468,6 +468,9 @@ img {
   background-color: var(--basic-light);
   border: 2px solid var(--input-border-color);
 }
+.button-outline:focus path {
+  fill: var(--basic-black);
+}
 
 .number-people::-webkit-outer-spin-button,
 .number-people::-webkit-inner-spin-button {
