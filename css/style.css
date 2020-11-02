@@ -255,7 +255,7 @@ img {
 .advantages-item-1 {
   display: grid;
   grid-template-columns: 400px 400px 400px;
-  grid-template-rows: 115px 21px auto 330px;
+  grid-template-rows: 115px 21px auto auto;
   grid-column: 1 / -1;
   grid-row: 1 / 3;
 }
@@ -271,6 +271,17 @@ img {
 .advantages-item-text {
   padding-top: 23px;
   min-height: 97px;
+}
+.sedona-life-item {
+  display: grid;
+  grid-template-rows: 160px 21px auto;
+}
+.sedona-life-title {
+  padding: 0;
+}
+.sedona-life-text {
+  padding-top: 25px;
+  min-height: 124px;
 }
 .advantages-item-2 {
   display: grid;
@@ -724,16 +735,6 @@ img {
 }
 .site-nav-item:nth-child(4n-1) {
   text-align: right;
-}
-.sedona-life-item {
-  display: grid;
-  grid-template-rows: 160px 21px 149px;
-}
-.sedona-life-title {
-  padding: 0;
-}
-.sedona-life-text {
-  padding-top: 25px;
 }
 
 /* Hotel pages */
