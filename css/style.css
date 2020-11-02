@@ -114,6 +114,8 @@ img {
   margin-bottom: -70px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  z-index: 2;
 }
 .site-nav {
   min-height: 56px;
@@ -169,7 +171,7 @@ img {
   line-height: 26px;
   font-weight: bold;
   text-align: center;
-  padding-bottom: 26px;
+  padding-bottom: 27px;
 }
 .advantages-title {
   width: 520px;
@@ -188,6 +190,7 @@ img {
 }
 .sedona-life-image {
   background-color: var(--basic-light-brown);
+  margin: auto;
 }
 .item-tytle {
   font-weight: bold;
@@ -205,8 +208,6 @@ img {
   margin: 0;
   padding-left: 45px;
   padding-right: 45px;
-  overflow: hidden;
-  max-height: 84px;
 }
 .sedona-life-text {
   color: var(--basic-extra-dark);
@@ -249,12 +250,12 @@ img {
 .advantages-list {
   display: grid;
   grid-template-columns: 400px 400px 400px;
-  grid-template-rows: 256px 330px 256px 256px;
+  grid-template-rows: auto;
 }
 .advantages-item-1 {
   display: grid;
   grid-template-columns: 400px 400px 400px;
-  grid-template-rows: 115px 21px 120px 330px;
+  grid-template-rows: 115px 21px auto 330px;
   grid-column: 1 / -1;
   grid-row: 1 / 3;
 }
@@ -269,24 +270,26 @@ img {
 }
 .advantages-item-text {
   padding-top: 23px;
+  min-height: 97px;
 }
 .advantages-item-2 {
   display: grid;
   grid-template-columns: 800px 400px;
-  grid-template-rows: 115px 21px 120px;
+  grid-template-rows: 115px 21px auto;
   grid-column: 1 / -1;
   grid-row: 3 / 4;
 }
 .rock-bridge {
   grid-column: 1 / 2;
   grid-row: 1 / -1;
+  margin: auto;
 }
 .advantages-item-3,
 .advantages-item-4,
 .advantages-item-5 {
   display: grid;
   grid-template-columns: 400px;
-  grid-template-rows: 115px 21px 120px;
+  grid-template-rows: 115px 21px auto;
 }
 .invitation {
   background-color: var(--basic-light);
@@ -297,13 +300,14 @@ img {
   font-weight: bold;
   font-size: 30px;
   line-height: 24px;
-  padding-top: 58px;
+  padding-top: 57px;
   margin: 0;
 }
 .invitation-text {
+  width: 568px;
   font-size: 14px;
   line-height: 24px;
-  margin: 0;
+  margin: 0 auto;
   padding-bottom: 45px;
   padding-top: 31px;
 }
