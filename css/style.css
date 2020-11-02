@@ -154,7 +154,7 @@ img {
 .back-image-wrap {
   background-color: var(--basic-light-brown);
   background: url("../img/background/welcome.svg") no-repeat 50% 49%,
-    url("../img/background/shape.svg") no-repeat center bottom,
+    url("../img/background/shap.svg") no-repeat center bottom,
     url("../img/background/background-photo-optim.jpg") no-repeat;
   height: 509px;
   width: 1200px;
