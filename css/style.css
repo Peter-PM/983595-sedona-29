@@ -750,9 +750,11 @@ img {
   line-height: 21px;
 }
 .search-filter {
-  height: 217px;
+  min-height: 217px;
   background-color: var(--dark-blue);
   background-image: url("../img/background/background-blur.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: var(--basic-light);
 }
 .search-filter-grid {
@@ -817,7 +819,13 @@ img {
   border: none;
   background: none;
   text-align: center;
-  color: inherit;
+}
+.price-inputs::-moz-placeholder {
+  color: var(--basic-light);
+  opacity: 1;
+}
+.price-controls input::-webkit-input-placeholder {
+  color: var(--basic-light);
 }
 .price-inputs:active {
   outline: none;
@@ -825,6 +833,7 @@ img {
 .price-inputs:focus {
   outline-color: var(--extra-dark-blue);
 }
+
 .price-controls::after {
   content: "";
   position: absolute;
