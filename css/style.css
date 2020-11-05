@@ -819,6 +819,7 @@ img {
   border: none;
   background: none;
   text-align: center;
+  color: var(--basic-light);
 }
 .price-inputs::-moz-placeholder {
   color: var(--basic-light);
